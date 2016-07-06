@@ -1,11 +1,17 @@
-name := "PlayingWithPlayScala"
+import com.github.play2war.plugin.{Play2WarKeys, Play2WarPlugin}
 
-version := "1.0"
+name := "playing-with-play-scala"
 
-lazy val `playingwithplayscala` = (project in file(".")).enablePlugins(PlayScala)
+version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.7"
+libraryDependencies ++= Seq(
+  javaJdbc,
+  javaEbean,
+  cache
+)
 
-libraryDependencies ++= Seq( jdbc , cache , ws   , specs2 % Test )
+play.Project.playJavaSettings
 
-unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )  
+Play2WarPlugin.play2WarSettings
+
+Play2WarKeys.servletVersion := "3.1"
