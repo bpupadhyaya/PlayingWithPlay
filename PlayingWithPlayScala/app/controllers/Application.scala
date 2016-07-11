@@ -18,3 +18,9 @@ object ApplicationNew extends Controller {
     Ok(views.html.sayMessage(name))
   }
 }
+
+object ApplicationProductList extends Controller {
+  def index = Action {
+    implicit request => Redirect(routes.Products.list())
+  }
+}

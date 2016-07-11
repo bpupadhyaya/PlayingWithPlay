@@ -8,8 +8,4 @@ GET     /                           controllers.Application.index
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-GET /hi             controllers.Application.sayMessage(n: String)
-GET /hiPage          controllers.ApplicationNew.sayMessage(n: String)
-
-GET /products       controllers.ApplicationProductList.list
-
+    

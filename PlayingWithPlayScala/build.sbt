@@ -15,3 +15,5 @@ play.Project.playJavaSettings
 Play2WarPlugin.play2WarSettings
 
 Play2WarKeys.servletVersion := "3.1"
+
+libraryDependencies += "net.sf.barcode4j" % "barcode4j" % "2.1"
