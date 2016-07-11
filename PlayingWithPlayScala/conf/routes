@@ -11,3 +11,5 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET /hi             controllers.Application.sayMessage(n: String)
 GET /hiPage          controllers.ApplicationNew.sayMessage(n: String)
 
+GET /products       controllers.ApplicationProductList.list
+
