@@ -8,6 +8,7 @@ import views.html.products.list;
 
 import java.util.List;
 
+//Repo test - problems with import views.html.products.list - off comp;
 
 /**
  * Authors: Leroux et al., 2014
